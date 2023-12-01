@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>BrowserInBrowser</title>
+    <link href="./static/bootstrap.min.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div style="width: 1400px" class="my-5 mx-auto">
+      <h1 class="text-center">BrowserInBrowser</h1>
+      <div class="d-flex p-2 gap-2">
+        <div class="flex-grow-1">
+          <input
+            id="url"
+            type="text"
+            class="form-control"
+            placeholder="URL, example: http://youtube.com"
+          />
+        </div>
+        <div>
+          <button id="go" type="button" class="btn btn-primary">Go</button>
+        </div>
+        <div>
+          <button id="refresh" type="button" class="btn btn-secondary">
+            Refresh
+          </button>
+        </div>
+      </div>
+      <div class="p-2 text-center">
+        <canvas
+          id="screenshot"
+          width="1280"
+          height="1024"
+          class="border border-dark"
+        ></canvas>
+      </div>
+    </div>
+    <script type="text/javascript" src="./static/main.js"></script>
+  </body>
+</html>
